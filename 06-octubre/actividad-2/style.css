@@ -1,0 +1,33 @@
+.b-black{
+    border: 1px solid black;
+}
+.b-center{
+    width: 900px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.nav-bar > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.f-main{
+    display: flex;
+    gap: 100px;
+}
+.p-style{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.footer{
+    display: flex;
+}
+.footer > p{
+    text-align: center;
+    font-size: small;
+    margin: 15px;
+    height: 80px;
+}
