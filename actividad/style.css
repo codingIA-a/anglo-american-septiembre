@@ -1,0 +1,47 @@
+.img-perfil{
+    width: 70px;
+    height: 70px;
+}
+.b-black{
+    border: 1px solid black;
+}
+li{
+    padding: 0;
+    list-style-type: none;
+}
+.nav-bar{
+    width: 30vh;
+    height: 90vh;
+}
+.ul-nav{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.ul-nav > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.principal{
+    width: 900px;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+.art-1{
+    width: 800px;
+    height: 25vh;
+}
+.art-2{
+    width: 800px;
+    height: 60vh;
+}
+body{
+    display: flex;
+}
