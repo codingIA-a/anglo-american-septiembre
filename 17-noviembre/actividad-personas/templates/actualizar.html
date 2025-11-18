@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Actualziar usuario</h1>
+    <form action="{{ url_for('actualizar_data', id=usuario.id) }}" method="post"><br>
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" value="{{ usuario.nombre }} " required>
+        <br>
+        <label for="">Apellido:</label>
+        <input type="text" name="apellido" value="{{ usuario.apellido }}" required>
+        <br>
+        <label for="">Edad:</label>
+        <input type="number" name="edad" value="{{ usuario.edad }}"required>
+        <br>
+        <label for="">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" value="{{ usuario.fecha_nacimiento }}"required>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>

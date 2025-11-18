@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detalles del usuario</h1>
+    <p>Nombre: {{ usuario.nombre }}</p>
+    <p>Apellido: {{ usuario.apellido }}</p>
+    <p>Edad: {{ usuario.edad }}</p>
+
+    <form action="{{ url_for('eliminar_usuario', id=usuario.id) }}" method="post">
+        <button type="submit">Eliminar usuario</button>
+    </form>
+    <a href="{{ url_for('mostrar_formulario', id=usuario.id) }}">Actualizar datos</a>
+</body>
+</html>

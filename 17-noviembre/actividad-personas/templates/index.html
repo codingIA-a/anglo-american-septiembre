@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola</h1>
+    <a href="{{ url_for('formulario') }}">Ir al formulario</a>
+    
+    {% for i in usuarios %}
+        <p>Nombre: {{ i.nombre }} {{ i.apellido }}</p>
+        <p>Edad: {{ i.edad }}</p>
+        <a href="{{ url_for('ver_usuario', id=i.id) }}">Ver detalles</a>
+    {% endfor %}
+    
+</body>
+</html>
